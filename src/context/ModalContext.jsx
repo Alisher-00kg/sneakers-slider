@@ -3,38 +3,14 @@ import { createContext, useState, useContext } from "react";
 const ModalContext = createContext();
 
 export const ModalProvider = ({ children }) => {
-  const [state, setState] = useState([]);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const [modal, setModal] = useState([]);
+  const openModal = () => setIsOpenModal(true);
 
-  const addFavoriteModal = (item) => {
-    setState((e) => {
-      const itemModal = e.some((itemCart) => itemCart.id === item.id);
-
-      if (itemModal) {
-        return e.filter((itemCart) => itemCart.id !== item.id);
-      } else {
-        return [...e, item];
-      }
-    });
-  };
-
-  const addCartModal = (item) => {
-    setState((e) => {
-      const itemModal = e.some((itemCart) => itemCart.id === item.id);
-
-      if (itemModal) {
-        return e.filter((itemCart) => itemCart.id !== item.id);
-      } else {
-        return [...e, item];
-      }
-    });
-  };
+  const closeModal = () => setIsOpenModal(false);
 
   return (
-    <ModalContext.Provider
-      value={{ state, modal, addCartModal, addFavoriteModal }}
-    >
+    <ModalContext.Provider value={{ isOpenModal, closeModal, openModal }}>
       {children}
     </ModalContext.Provider>
   );
