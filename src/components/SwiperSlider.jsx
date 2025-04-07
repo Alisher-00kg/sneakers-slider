@@ -21,9 +21,10 @@ export const SwiperSlider = () => {
         slidesPerView={1}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         navigation
+        loop={true}
         pagination={{ clickable: true }}
         modules={[Autoplay, Navigation, Pagination, A11y]}
-        speed={800}
+        speed={1000}
       >
         <SwiperSlide>
           <StyledImg src={Slider} alt="Nike1" />
