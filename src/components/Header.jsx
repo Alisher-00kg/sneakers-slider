@@ -1,14 +1,14 @@
 import React from "react";
-import { Icons } from "../assets";
 import styled from "styled-components";
 import IconButton from "./UI/IconButton";
+import { Icons } from "../assets";
 
 export const Header = () => {
   return (
     <StyledHeader>
       <StyledLeftHeader>
         <IconButton>
-          <img src={Icons.LogoHeader} alt="Logo" />
+          <Icons.LogoHeader />
         </IconButton>
         <StyledText href="#">Women</StyledText>
         <StyledText href="#">Men</StyledText>
@@ -19,13 +19,13 @@ export const Header = () => {
       </StyledLeftHeader>
       <StyledRightHeader>
         <IconButton>
-          <img src={Icons.Heart} alt="Избранные" />
+          <Icons.BlackHeart />
         </IconButton>
         <IconButton>
-          <img src={Icons.Vector} alt="Карзина" />
+          <Icons.Basket />
         </IconButton>
         <IconButton>
-          <img src={Icons.Man} alt="Лич.Кобинет" />
+          <Icons.Avatar />
         </IconButton>
       </StyledRightHeader>
     </StyledHeader>
