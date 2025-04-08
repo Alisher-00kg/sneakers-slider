@@ -1,17 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Facebook from "../assets/icons/Facebook.svg";
-import Instagram from "../assets/icons/Instagram.svg";
-import VectorX from "../assets/icons/VectorX.svg";
-import VectorIn from "../assets/icons/VectorIn.svg";
-import VectorYoutube from "../assets/icons/VectorYouTube.svg";
+
+import { Icons } from "../assets";
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <FooterContent>
         <CompanyInfo>
-          <Logo>Logo</Logo>
+          <StyledFooterLogo />
           <Address>
             <h4>Address:</h4>
             <p>USA, California</p>
@@ -22,35 +19,29 @@ export const Footer = () => {
             <a href="#">javaria.y2b@gmail.com</a>
           </Contact>
           <SocialIcons>
-            <img src={Facebook} alt="Facebook" />
-            <img src={Instagram} alt="Instagram" />
-            <img src={VectorX} alt="X (Twitter)" />
-            <img src={VectorIn} alt="LinkedIn" />
-            <img src={VectorYoutube} alt="YouTube" />
+            <Icons.FacebookSvg />
+            <Icons.InstagramSvg />
+            <Icons.XtwitterSvg />
+            <Icons.LinkedinSvg />.
+            <Icons.YouTubeSvg />
           </SocialIcons>
         </CompanyInfo>
 
         <LinkGroups>
+          
           <LinkColumn>
-            <a href="#">Link one</a>
-            <a href="#">Link two</a>
-            <a href="#">Link three</a>
-            <a href="#">Link four</a>
-            <a href="#">Link five</a>
+            <a href="#">Paзработчики:</a>
+            <a href="#">Нуриза</a>
+            <a href="#">Куба</a>
+            <a href="#">Арген</a>
+            <a href="#">Данияр</a>
           </LinkColumn>
           <LinkColumn>
-            <a href="#">Link one</a>
-            <a href="#">Link two</a>
-            <a href="#">Link three</a>
-            <a href="#">Link four</a>
-            <a href="#">Link five</a>
-          </LinkColumn>
-          <LinkColumn>
-            <a href="#">Link six</a>
-            <a href="#">Link seven</a>
-            <a href="#">Link eight</a>
-            <a href="#">Link nine</a>
-            <a href="#">Link ten</a>
+            <a href="#">Сымбат</a>
+            <a href="#">Нурбол</a>
+            <a href="#">Наталья</a>
+            <a href="#"> U.S.A.</a>
+            <a href="#">California</a>
           </LinkColumn>
         </LinkGroups>
       </FooterContent>
@@ -85,10 +76,6 @@ const CompanyInfo = styled.div`
   flex-direction: column;
   gap: 35px;
   max-width: 400px;
-`;
-
-const Logo = styled.h1`
-  font-size: 27px;
 `;
 
 const Address = styled.div`
@@ -144,4 +131,12 @@ const Divider = styled.div`
 const Copyright = styled.h4`
   font-weight: 400;
   font-size: 15px;
+`;
+
+
+const StyledFooterLogo = styled(Icons.LogoHeader)`
+  stroke: #fff;
+  path {
+    fill: #fff;
+  }
 `;
