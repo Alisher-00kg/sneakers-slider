@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { SignInContext } from "../context/LoginContext";
 import { Eye, EyeOff } from "lucide-react";
+import { Header } from "../components/Header";
 
 const Login = () => {
   const { state, dispatch } = useContext(SignInContext);
@@ -42,7 +43,7 @@ const Login = () => {
       localStorage.setItem("password", state.password);
       alert("Data saved!");
 
-      dispatch({ type: "RESET" });
+      dispatch({ type: "reset" });
     }
   };
 
@@ -80,6 +81,7 @@ const Login = () => {
                   onChange={(e) =>
                     dispatch({ type: "PASSWORD", payload: e.target.value })
                   }
+                  
                 />
 
                 <Valid>
@@ -88,7 +90,6 @@ const Login = () => {
                   )}
                 </Valid>
               </div>
-
               <EyeBtn
                 type="button"
                 onClick={() =>
@@ -102,8 +103,13 @@ const Login = () => {
               </EyeBtn>
             </StyledEye>
           </FromMini>
-
-          <StdBtnLog type="submit">Login to account</StdBtnLog>
+          <StdBtnLog
+            onClick={() =>
+              dispatch({ type: "toggle", payload: !state.toggleList })
+            }
+          >
+            Login to account
+          </StdBtnLog>
         </StyledForm>
 
         <StyledMiniDiv>
@@ -231,7 +237,6 @@ const EyeBtn = styled.button`
   height: 48px;
   border: none;
   background-color: white;
-  
 `;
 
 const Valid = styled.div`

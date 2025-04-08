@@ -17,6 +17,7 @@
     "react-password-checklist": "^1.8.1",
     "react-toastify": "^11.0.5",
     "styled-components": "^6.1.17",
+    "swiper": "^11.2.6",
     "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {
