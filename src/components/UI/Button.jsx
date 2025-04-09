@@ -36,7 +36,7 @@ const StylesButton = (variant) => {
         verticalAlign: " middle",
       };
     }
-    case "new-arrivals": {
+    case "new": {
       return {
         width: "215px",
         height: "57px",
@@ -58,7 +58,7 @@ const StylesButton = (variant) => {
         },
       };
     }
-    case "WHAT’S TRENDING": {
+    case "trending": {
       return {
         width: "250px",
         height: "57px",
@@ -78,97 +78,6 @@ const StylesButton = (variant) => {
         "&:active": {
           background: "#9FA16D",
         },
-      };
-    }
-    case "Add To Cart": {
-      return {
-        width: "270px",
-        height: "41px",
-        gap: "10px",
-        color: "white",
-        fontWeight: "500px",
-        FontFamily: "Space Grotesk",
-        lineHeight: "20px",
-        letterSpacing: "0%",
-        background: "#020202",
-      };
-    }
-    case "SHOP NOW": {
-      return {
-        width: "140px",
-        height: "45px",
-        gap: "10px",
-        color: "white",
-        fontWeight: "700px",
-        fontSize: "18px",
-        lineHeight: "20px",
-        letterSpacing: "5%",
-        background: "#020202",
-      };
-    }
-    case "KIDS": {
-      return {
-        width: "99px",
-        height: "54px",
-        gap: "10px",
-        color: "white",
-        fontWeight: "700px",
-        fontSize: "18px",
-        lineHeight: "20px",
-        letterSpacing: "5%",
-        background: "#020202",
-      };
-    }
-    case "WOMEN": {
-      return {
-        width: "152px",
-        height: "54px",
-        gap: "10px",
-        color: "white",
-        fontWeight: "700px",
-        fontSize: "18px",
-        lineHeight: "20px",
-        letterSpacing: "5%",
-        background: "#020202",
-      };
-    }
-    case "SNEAKERS": {
-      return {
-        width: "128px",
-        height: "54px",
-        gap: "10px",
-        color: "white",
-        fontWeight: "700px",
-        fontSize: "18px",
-        lineHeight: "20px",
-        letterSpacing: "5%",
-        background: "#020202",
-      };
-    }
-    case "BOOTS": {
-      return {
-        width: "118px",
-        height: "54px",
-        gap: "10px",
-        color: "black",
-        fontWeight: "700px",
-        fontSize: "18px",
-        lineHeight: "20px",
-        letterSpacing: "5%",
-        background: "white",
-      };
-    }
-    case "MEN": {
-      return {
-        width: "40px",
-        height: "54px",
-        gap: "10px",
-        color: "black",
-        fontWeight: "700px",
-        fontSize: "18px",
-        lineHeight: "20px",
-        letterSpacing: "5%",
-        background: "white",
       };
     }
   }
