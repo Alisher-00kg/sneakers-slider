@@ -1,38 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import { Boots, Kids, Sneakers, WomenImg, Man } from "../../assets";
-// import Boots from "../assets/image/Boots.png";
-// import Kids from "../assets/image/Kids.png"
-// import Men from "../assets/image/Men.png"
-// import Sneakers from "../assets/image/Sneakers.png"
-// import women from "../assets/image/Women.png"
 
 export const PhotoNavigation = () => {
   return (
     <DivMain>
       <DivOne>
         <button>KIDS</button>
-        {/* <img src={Kids} alt="" /> */}
       </DivOne>
       <SecondDiv>
         <DivTwo>
           <button>WOMEN</button>
-          {/* <img src={WomenImg} alt="" /> */}
         </DivTwo>
 
         <DivThree>
           <button>SNEAKERS</button>
-          {/* <img src={Sneakers} alt="" /> */}
         </DivThree>
       </SecondDiv>
       <SecondDiv>
         <DivFour>
           <button>BOOTS</button>
-          {/* <img src={Boots} alt="" /> */}
         </DivFour>
         <DivFive>
           <button>MEN </button>
-          {/* <img src={Man} alt="" /> */}
         </DivFive>
       </SecondDiv>
     </DivMain>
@@ -75,7 +65,7 @@ const DivOne = styled.div`
 `;
 
 const DivTwo = styled.div`
-  width: 885px;
+  width: 100%;
   height: 542px;
   background-image: url(${WomenImg});
   background-repeat: no-repeat;
@@ -96,7 +86,7 @@ const DivTwo = styled.div`
 `;
 
 const DivThree = styled.div`
-  width: 669px;
+  width: 70%;
   height: 542px;
   background-image: url(${Sneakers});
   background-repeat: no-repeat;
@@ -117,7 +107,7 @@ const DivThree = styled.div`
 `;
 
 const DivFour = styled.div`
-  width: 549px;
+  width: 70%;
   height: 542px;
   background-image: url(${Boots});
   background-repeat: no-repeat;
@@ -138,7 +128,7 @@ const DivFour = styled.div`
 `;
 
 const DivFive = styled.div`
-  width: 985px;
+  width: 100%;
   height: 542px;
   background-image: url(${Man});
   background-repeat: no-repeat;
