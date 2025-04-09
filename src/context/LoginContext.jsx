@@ -7,7 +7,6 @@ const initialState = {
   password: "",
   showPassword: false,
   errors: { email: "", password: "" },
-  toggleList: false,
 };
 
 const reduser = (state, action) => {
@@ -20,8 +19,6 @@ const reduser = (state, action) => {
       return { ...state, showPassword: !state.showPassword };
     case "ERRORS":
       return { ...state, errors: action.payload };
-    case "home":
-      return <Home goToAbout={() => setCurrentPage("about")} />;
     case "reset":
       return initialState;
     default:
