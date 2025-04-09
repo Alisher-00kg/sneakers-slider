@@ -10,7 +10,11 @@ import LinkedinSvg from "./icons/footer-icons/LinkedIn.svg?react";
 import InstagramSvg from "./icons/footer-icons/Instagram.svg?react";
 import XtwitterSvg from "./icons/footer-icons/X.svg?react";
 import YouTubeSvg from "./icons/footer-icons/Youtube.svg?react";
-
+export { default as WomenImg } from "./image/Women.png";
+export { default as Boots } from "./image/Boots.png";
+export { default as Kids } from "./image/Kids.png";
+export { default as Man } from "./image/Man.png";
+export { default as Sneakers} from "./image/Sneakers.png"
 export const Icons = {
   FiveStars,
   FourStars,
