@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Icons } from "../assets";
-import IconButton from "./UI/IconButton";
+import { Button } from "./UI/Button";
 
 export const CardItem = ({
   id,
@@ -12,11 +11,14 @@ export const CardItem = ({
   heartImg,
   heartST,
 }) => {
+
   return (
     <StyledInfoDiv key={id}>
       <StyledImgDiv>
-        <img src={image} alt={title} />
-        
+        <div>
+          <img src={image} alt={title} />
+        </div>
+        <Button variant={"signin"}>Add To Carts</Button>
       </StyledImgDiv>
       <p>{title}</p>
       <StyledPriceInfo>
@@ -28,14 +30,15 @@ export const CardItem = ({
           ${newPrice}
         </p>
         <OldPrice>{oldPrice >= 1160 ? "$1160" : ""}</OldPrice>
+        {}
       </StyledPriceInfo>
     </StyledInfoDiv>
   );
 };
 const StyledInfoDiv = styled.div`
+  margin: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
   transition: 0.5s ease;
   h1 {
@@ -43,6 +46,10 @@ const StyledInfoDiv = styled.div`
   }
   &:hover {
     transform: scale(1.05);
+    button {
+      display: block;
+      transition: 0.5s ease-in-out;
+    }
   }
 `;
 
@@ -58,11 +65,18 @@ const OldPrice = styled.p`
 
 const StyledImgDiv = styled.div`
   width: 270px;
-  height: 250px;
+  height: 270px;
   background-color: #e9e9eb;
   img {
-    width: 250px;
-    height: 230px;
+    width: 200px;
+    height: 130px;
+    margin: 50px;
     object-fit: cover;
+  }
+  button {
+    width: 100%;
+    height: 41px;
+    display: none;
+    background-color: black;
   }
 `;
