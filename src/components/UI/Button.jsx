@@ -34,6 +34,10 @@ const StylesButton = (variant) => {
         lineHeight: "20px",
         letterSpacing: "0%",
         verticalAlign: " middle",
+        "&:active": {
+          transform: "scale(1.1)",
+          backgroundColor: " rgb(3, 42, 81)",
+        },
       };
     }
     case "new": {
