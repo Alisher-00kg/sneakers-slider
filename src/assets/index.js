@@ -10,6 +10,10 @@ import LinkedinSvg from "./icons/footer-icons/LinkedIn.svg?react";
 import InstagramSvg from "./icons/footer-icons/Instagram.svg?react";
 import XtwitterSvg from "./icons/footer-icons/X.svg?react";
 import YouTubeSvg from "./icons/footer-icons/Youtube.svg?react";
+import WhiteSneaker from "./image/SneakersWhite.png";
+import RedSneaker from "./image/SneakersRed.png";
+import GreenSneaker from "./image/SneakersGreen.png";
+import BlueSneaker from "./image/SneakersBlue.png";
 
 export const Icons = {
   FiveStars,
@@ -24,4 +28,8 @@ export const Icons = {
   InstagramSvg,
   XtwitterSvg,
   YouTubeSvg,
+  WhiteSneaker,
+  RedSneaker,
+  GreenSneaker,
+  BlueSneaker,
 };
