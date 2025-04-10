@@ -3,7 +3,7 @@ import { Icons } from "../../assets";
 export const Constants = [
   {
     id: 1,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Nike ZoomX Vaporfly",
     oldPrice: null,
     newPrice: 160,
     reviews: 88,
@@ -12,7 +12,7 @@ export const Constants = [
   },
   {
     id: 2,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Puma Pro Max",
     oldPrice: null,
     newPrice: 160,
     reviews: 88,
@@ -21,7 +21,7 @@ export const Constants = [
   },
   {
     id: 3,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Nike Are Max 90",
     oldPrice: null,
     newPrice: 160,
     reviews: 88,
@@ -30,7 +30,7 @@ export const Constants = [
   },
   {
     id: 4,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Nike Zoom Freak",
     oldPrice: 1160,
     newPrice: 960,
     reviews: 75,
@@ -39,7 +39,7 @@ export const Constants = [
   },
   {
     id: 5,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Nike Are Max 90",
     oldPrice: null,
     newPrice: 160,
     reviews: 88,
@@ -48,7 +48,7 @@ export const Constants = [
   },
   {
     id: 6,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Nike Zoom Freak",
     oldPrice: 1160,
     newPrice: 960,
     reviews: 75,
@@ -57,7 +57,7 @@ export const Constants = [
   },
   {
     id: 7,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Puma Pro Max",
     oldPrice: null,
     newPrice: 160,
     reviews: 88,
@@ -66,7 +66,7 @@ export const Constants = [
   },
   {
     id: 8,
-    title: "HAVIT HV-G92 Gamepad",
+    title: "Nike ZoomX Vaporfly",
     oldPrice: 1160,
     newPrice: 960,
     reviews: 75,
